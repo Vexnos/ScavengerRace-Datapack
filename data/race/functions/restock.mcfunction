@@ -34,6 +34,7 @@ give @a[tag=hunterdead] trident{display:{Name:'[{"text":"a","color":"dark_red","
 give @a[tag=hunterdead] water_bucket 1
 give @a[tag=hunterdead] lava_bucket 1
 give @a[tag=hunterdead] compass 1
+give @a[tag=hunterdead] ender_pearl 64
 give @a[tag=hunterdead] written_book{pages:['["",{"text":"Select Who To Track","bold":true,"underlined":true},{"text":"\\n","color":"reset"},{"text":"* Vexnos","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trackvexnos"}},{"text":"\\n","color":"reset"},{"text":"* Mathmagician8191","color":"red","clickEvent":{"action":"run_command","value":"/trigger trackmath"}},{"text":"\\n","color":"reset"},{"text":"* qqqqqwwwww009","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger trackqqqqq"}},{"text":"\\n","color":"reset"},{"text":"* Atomhix","color":"gold","clickEvent":{"action":"run_command","value":"/trigger trackatom"}},{"text":"\\n","color":"reset"},{"text":"* mR_P0tat012","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger trackpotato"}}]'],title:"Tracker Book",author:Vexnos}
 gamemode survival @a[tag=hunterdead]
 tag @a[tag=hunterdead] remove hunterdead
