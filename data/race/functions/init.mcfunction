@@ -15,3 +15,6 @@ scoreboard objectives add trackatom trigger
 scoreboard objectives add trackpotato trigger
 scoreboard objectives add trackvexnos trigger
 scoreboard objectives add gameRunning dummy
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false
