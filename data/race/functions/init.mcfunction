@@ -7,3 +7,8 @@ gamemode survival @s
 advancement revoke @a everything
 worldborder center 0 0
 worldborder set 10000
+scoreboard objectives add trackmath trigger
+scoreboard objectives add trackqqqqq trigger
+scoreboard objectives add trackatom trigger
+scoreboard objectives add trackpotato trigger
+scoreboard objectives add trackvexnos trigger
