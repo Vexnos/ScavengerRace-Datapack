@@ -5,3 +5,4 @@ worldborder set 10000
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 gamerule doMobSpawning true
+scoreboard players set running gameRunning 1
