@@ -18,3 +18,4 @@ scoreboard objectives add gameRunning dummy
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doMobSpawning false
+time set 0
