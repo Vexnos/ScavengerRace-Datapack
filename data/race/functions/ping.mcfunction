@@ -1,0 +1,1 @@
+execute as @a[team=1] at @s run effect give @a[team=2,distance=..50] glowing 1 0 false
