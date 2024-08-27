@@ -9,3 +9,4 @@ scoreboard objectives remove trackatom
 scoreboard objectives remove trackpotato
 scoreboard objectives remove trackvexnos
 scoreboard objectives remove gameRunning
+scoreboard objectives remove elytraEnabled

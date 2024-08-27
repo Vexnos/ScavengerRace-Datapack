@@ -1,9 +1,11 @@
+# Runner's Gear
 give @a[tag=dead] skeleton_horse_spawn_egg{EntityTag:{Health:50f,Tame:1b,Attributes:[{Name:generic.max_health,Base:50},{Name:generic.movement_speed,Base:0.25}],SaddleItem:{id:"minecraft:saddle",Count:1b}}} 3
 give @a[tag=dead] diamond_sword{Unbreakable:1b}
 give @a[tag=dead] diamond_axe{Unbreakable:1b}
 give @a[tag=dead] bow{Unbreakable:1b}
 give @a[tag=dead] arrow 256
-give @a[tag=dead] golden_carrot 128
+give @a[tag=dead] golden_carrot 32
+give @a[tag=dead] bread 32
 give @a[tag=dead] diamond_pickaxe{Enchantments:[{id:efficiency,lvl:2}],Unbreakable:1b}
 give @a[tag=dead] turtle_helmet{Damage:275,Enchantments:[{id:aqua_affinity,lvl:1},{id:respiration,lvl:1}]}
 item replace entity @a[tag=dead] weapon.offhand with shield{Unbreakable:1b}
@@ -15,6 +17,7 @@ give @a[tag=dead] water_bucket 1
 gamemode survival @a[tag=dead]
 tag @a[tag=dead] remove dead
 
+# Hunter's Gear
 item replace entity @a[tag=hunterdead] armor.head with netherite_helmet{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Helmet","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:fire_protection",lvl:4s},{id:"minecraft:aqua_affinity",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;-348433173,872629225,-1889947511,1972157866],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;-961161109,-1483848313,-1910250953,-1920847537],Slot:"head"}],Trim:{material:"minecraft:gold",pattern:"minecraft:coast"}}
 item replace entity @a[tag=hunterdead] armor.chest with netherite_chestplate{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Breastplate","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:fire_protection",lvl:4s},{id:"minecraft:vanishing_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;-1627850934,-1099479062,-1426295846,2121766880],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;216843212,-1780265996,-1247174418,-1653366704],Slot:"chest"}],Trim:{material:"minecraft:redstone",pattern:"minecraft:shaper"}}
 item replace entity @a[tag=hunterdead] armor.legs with netherite_leggings{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Leggings","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:fire_protection",lvl:4s},{id:"minecraft:vanishing_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;1807745955,1046300808,-1247755130,1823998671],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;1017790008,-863353635,-1528064985,1220344374],Slot:"legs"}],Trim:{material:"minecraft:redstone",pattern:"minecraft:silence"}}
@@ -24,18 +27,24 @@ give @a[tag=hunterdead] netherite_sword{display:{Name:'[{"text":"a","color":"dar
 give @a[tag=hunterdead] netherite_axe{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Axe","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:2s},{id:"minecraft:efficiency",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:8,Operation:0,UUID:[I;341366932,501043193,-2094102292,-1731775901],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;2005158024,-1493482326,-1965965965,-11188478],Slot:"mainhand"}]} 1
 give @a[tag=hunterdead] netherite_pickaxe{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Pickaxe","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:5s},{id:"minecraft:fortune",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
 give @a[tag=hunterdead] netherite_hoe{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Hoe","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:5s},{id:"minecraft:fortune",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
-give @a[tag=hunterdead] netherite_block 256
+give @a[tag=hunterdead] netherite_block{Enchantments:[{id:vanishing_curse,lvl:1}]} 256
 give @a[tag=hunterdead] arrow{Enchantments:[{id:vanishing_curse,lvl:1}]} 256
 give @a[tag=hunterdead] bow{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Bow","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:2s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:infinity",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
-give @a[tag=hunterdead] elytra{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Wings","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
-give @a[tag=hunterdead] firework_rocket{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Rockets","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 256
-give @a[tag=hunterdead] golden_carrot 256
-give @a[tag=hunterdead] trident{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Trident","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Enchantments:[{id:"minecraft:riptide",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+
+# Elytra (Disabled)
+execute if score elytra elytraEnabled matches 1.. run give @a[tag=hunterdead] elytra{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Wings","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+execute if score elytra elytraEnabled matches 1.. run give @a[tag=hunterdead] firework_rocket{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Rockets","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 256
+execute if score elytra elytraEnabled matches 1.. run give @a[tag=hunterdead] trident{display:{Name:'[{"text":"a","color":"dark_red","bold":true,"italic":true,"obfuscated":true},{"text":"Hunter\'s Trident","italic":false,"obfuscated":false},{"text":"a","italic":true,"obfuscated":true}]'},Enchantments:[{id:"minecraft:riptide",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+
+# Skeleton Horse
+execute if score elytra elytraEnabled matches 0 run give @a[tag=hunterdead] skeleton_horse_spawn_egg{Enchantments:[{id:vanishing_curse,lvl:1}],EntityTag:{Health:50f,Tame:1b,Attributes:[{Name:generic.max_health,Base:50},{Name:generic.movement_speed,Base:0.25}],SaddleItem:{id:"minecraft:saddle",Count:1b}}} 10
+
+give @a[tag=hunterdead] golden_carrot{Enchantments:[{id:vanishing_curse,lvl:1}]} 256
 give @a[tag=hunterdead] water_bucket 1
 give @a[tag=hunterdead] lava_bucket 1
-give @a[tag=hunterdead] compass 1
-give @a[tag=hunterdead] ender_pearl 64
-give @a[tag=hunterdead] written_book{pages:['["",{"text":"Select Who To Track","bold":true,"underlined":true},{"text":"\\n","color":"reset"},{"text":"* Vexnos","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trackvexnos"}},{"text":"\\n","color":"reset"},{"text":"* Mathmagician8191","color":"red","clickEvent":{"action":"run_command","value":"/trigger trackmath"}},{"text":"\\n","color":"reset"},{"text":"* qqqqqwwwww009","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger trackqqqqq"}},{"text":"\\n","color":"reset"},{"text":"* Atomhix","color":"gold","clickEvent":{"action":"run_command","value":"/trigger trackatom"}},{"text":"\\n","color":"reset"},{"text":"* mR_P0tat012","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger trackpotato"}}]'],title:"Tracker Book",author:Vexnos}
+give @a[tag=hunterdead] compass{Enchantments:[{id:vanishing_curse,lvl:1}]} 1
+give @a[tag=hunterdead] ender_pearl{Enchantments:[{}]} 64
+give @a[tag=hunterdead] written_book{Enchantments:[{id:vanishing_curse,lvl:1}],pages:['["",{"text":"Select Who To Track","bold":true,"underlined":true},{"text":"\\n","color":"reset"},{"text":"* Vexnos","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger trackvexnos"}},{"text":"\\n","color":"reset"},{"text":"* Mathmagician8191","color":"red","clickEvent":{"action":"run_command","value":"/trigger trackmath"}},{"text":"\\n","color":"reset"},{"text":"* qqqqqwwwww009","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger trackqqqqq"}},{"text":"\\n","color":"reset"},{"text":"* Atomhix","color":"gold","clickEvent":{"action":"run_command","value":"/trigger trackatom"}},{"text":"\\n","color":"reset"},{"text":"* mR_P0tat012","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger trackpotato"}}]'],title:"Tracker Book",author:Vexnos}
 give @a[tag=hunterdead] goat_horn{Enchantments:[{id:vanishing_curse,lvl:1}],instrument:"minecraft:seek_goat_horn"}
 gamemode survival @a[tag=hunterdead]
 tag @a[tag=hunterdead] remove hunterdead

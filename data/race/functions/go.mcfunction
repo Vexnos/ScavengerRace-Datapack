@@ -6,3 +6,4 @@ gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 gamerule doMobSpawning true
 scoreboard players set running gameRunning 1
+schedule function race:releasehunter 60s
