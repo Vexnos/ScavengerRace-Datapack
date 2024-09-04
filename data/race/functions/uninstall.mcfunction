@@ -11,3 +11,4 @@ scoreboard objectives remove trackvexnos
 scoreboard objectives remove gameRunning
 scoreboard objectives remove elytraEnabled
 scoreboard objectives remove timer
+gamerule randomTickSpeed 0
